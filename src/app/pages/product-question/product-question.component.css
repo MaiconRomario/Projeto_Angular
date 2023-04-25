@@ -1,0 +1,34 @@
+
+.container {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+
+}
+
+.list-group-item {
+    font-size: 25px;
+}
+
+.form-check-label  {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form-check-label:hover {
+    font-size: 30px;
+}
+
+.list-group-item {
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: background-color 1s ;
+}
+
+.list-group-item:hover {
+    background-color: #00296b;
+    color: white;
+  }
+
+  
+

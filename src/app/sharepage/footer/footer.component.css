@@ -1,0 +1,33 @@
+.footer {
+  overflow: hidden;
+  background-color: var(--quarta-color);
+  padding: 15px 10px;
+  position: sticky;
+  top: 100%;
+}
+
+h1 {
+  color: var(--terceira-color);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+a {
+  color: var(--terceira-color);
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: 18px;
+  top: 5px;
+}
+
+a:hover {
+  color: var(--primeira-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.col-lg-3 {
+    position: relative;
+    top: 10px;
+}

@@ -1,0 +1,32 @@
+.navbar-expand-lg .navbar-nav .nav-link.active-link{
+  color: var(--primeira-color);
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--terceira-color);
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--primeira-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: var(--terceira-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-brand:hover {
+  font-size: 2.9em;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.container-fluid{
+background-color: var(--quarta-color);
+margin-top: -8px;
+}
