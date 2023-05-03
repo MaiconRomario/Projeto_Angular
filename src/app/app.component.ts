@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ApiService } from './api.service';
+import { RabbitmqServiceService } from './service/rabbitmq-service.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,23 +9,9 @@ import { ApiService } from './api.service';
 })
 export class AppComponent {
 
-    constructor(private apiService:ApiService) {}
+  constructor( private rabbitmqService: RabbitmqServiceService) {}
 
-    ngOnInit() {
-      let checkboxes = document.querySelectorAll('input[type=checkbox');
-
-      checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener('click', (event) => {
-          let label = (<HTMLLabelElement>( 
-            (<HTMLInputElement>event.target).nextSibling
-          )).getAttribute('data-label');
-
-          if (label) {
-            this.apiService.sendData(label).subscribe((response: any) => {
-              console.log(response)
-            })
-          }
-        })
-      }) 
-    }
+  async ngOnInit() {
+    await this.rabbitmqService.connectToRabbitMQ();
+  }
 }
